@@ -2,6 +2,8 @@
 
 <a href="https://github.com/edakass/SpringBoot_Tracking_Weight_Application">Github</a>
 <a href="https://www.youtube.com/watch?v=p9d0fenGGe0">Youtube</a>
+<br/>
+Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
 ![image](https://user-images.githubusercontent.com/61595808/149016047-1e244084-e23b-455e-9c43-36a1328aec39.png)
 
