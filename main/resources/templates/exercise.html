@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Exercises</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link th:rel="stylesheet" th:href="@{/assets/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css}"/>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="src/jquery.scrollUp.js"></script>
+</head>
+<style>
+.dropButon{
+  margin-right:20px;
+}
+.write{
+  font-size:16px;
+.navbar{
+   margin-bottom: 1rem;
+}
+
+
+
+</style>
+<body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <a class="navbar-brand  " href="#" style="color:#fff font-family:Arial Black"><strong>Tracking Weight Application</strong> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link write" th:href="@{/index}" style="margin-right:5px" ><strong> New Records</strong> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write" th:href="@{/data}" style="margin-right:5px"><strong> Check My Records</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write"  th:href="@{/motivation}" style="margin-right:5px"><strong> Motivation </strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write"  th:href="@{/calculate}" style="margin-right:5px"><strong> Calculate </strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write"  th:href="@{/food}" style="margin-right:5px"><strong> Food </strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write"  th:href="@{/exercise}" style="margin-right:5px"><strong> Exercises </strong></a>
+            </li>
+        </ul>
+    </div>
+    <form class="d-flex ms-auto">
+        <form method="post" >
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <div class="dropButon">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                               href="#"
+                               id="navbarDropdownMenuLink"
+                               data-toggle="dropdown"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <i class='far fa-user-circle' style='font-size:36px'  ></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                                <a class="dropdown-item" th:href="@{/index}"><span class="glyphicon glyphicon-home"></span> Home</a>
+                                <a class="dropdown-item" th:href="@{/settings}"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+                                <a class="dropdown-item"  sec:authorize="isAuthenticated()" th:href="@{/logout}"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </form>
+    </form>
+</nav>
+<div>
+    <center>
+    <h4><strong>Shoulder</strong></h4>
+    <tr>
+        <td>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/g5oQZmk7xMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+        <td>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/jXm0y-csiuE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+
+        <td>
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/djWz9xQmiWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+
+        <td>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/ZLFfQovA1H8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <br>
+    <h4><strong>Arms & Upper Body</strong></h4>
+
+    <tr>
+        <td>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/acp77RhVzMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+        <td>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/puLJaNv9m18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+        <td>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/orsz-qrx-ZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+        <td>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/v1ywvzu0Eu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+
+    </tr>
+
+    <br>
+        <h4><strong>Leg & Lower Body</strong></h4>
+        <tr>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/bZiTxuKRjNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/_ikvYb2xOGk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/Jg61m0DwURs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/EUruBzhv7Kk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        </tr>
+    <br>
+        <h4><strong>Hip Workout</strong></h4>
+        <tr>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/jj2AAH6jbHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/LjmZ1YMOwws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/v4zXo1HFOZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/8bgT4kLkel8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        </tr>
+    <br>
+    <h4><strong>Waist and Abs Workout</strong></h4>
+        <tr>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/RuBfFpMCWV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/rGDSM37AUj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/4Zne-5V30xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+            <td>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/QKCkO9fy9O4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </td>
+        </tr>
+
+    </center>
+<br>
+  </div>
+<center>
+<a href="#top"><img src="https://img.icons8.com/external-kmg-design-detailed-outline-kmg-design/55/000000/external-up-arrow-kmg-design-detailed-outline-kmg-design.png" /></a>
+</center>
+<br>
+<br>
+</body>
+</html>
