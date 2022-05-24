@@ -30,3 +30,6 @@ Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
 
 ![image](https://user-images.githubusercontent.com/61595808/167312776-d44b8b1b-1a1c-42fb-8f88-2e49a453fd9f.png)
+
+
+yeni işlemde siliyor veritabanından da ama düzeltme ve ekleme işlemlerini yapmıyor,daha sonra admin için kısımları yapacağım
