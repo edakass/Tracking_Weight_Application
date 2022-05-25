@@ -44,5 +44,6 @@ Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 Edit delete ve yeni besin eklemeyi adminin yapmasını sağlayacağım
 
 
+vide ekleme için is eşu linkten yararlanabilirim https://helperbyte.com/questions/496941/how-to-automatically-display-all-the-blocks-in-thymeleaf
 
-yeni işlemde siliyor veritabanından da ama düzeltme ve ekleme işlemlerini yapmıyor,daha sonra admin için kısımları yapacağım
+shoulder,arms vs için dropdown kullanarak ,video paneli yapabilirim,dropdown a index verebilirim mesela index 0 sa kol gib 
