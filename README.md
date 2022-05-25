@@ -46,4 +46,8 @@ Edit delete ve yeni besin eklemeyi adminin yapmasını sağlayacağım
 
 vide ekleme için is eşu linkten yararlanabilirim https://helperbyte.com/questions/496941/how-to-automatically-display-all-the-blocks-in-thymeleaf
 
-shoulder,arms vs için dropdown kullanarak ,video paneli yapabilirim,dropdown a index verebilirim mesela index 0 sa kol gib 
+shoulder,arms vs için dropdown kullanarak ,video paneli yapabilirim,dropdown a index verebilirim mesela index 0 sa kol gibi
+
+bu şekilde de yapabilirsin
+
+https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handling-tutorial
