@@ -51,3 +51,6 @@ shoulder,arms vs için dropdown kullanarak ,video paneli yapabilirim,dropdown a 
 bu şekilde de yapabilirsin
 
 https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handling-tutorial
+
+https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handling-tutorial
+
