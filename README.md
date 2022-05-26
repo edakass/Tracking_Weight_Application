@@ -54,3 +54,16 @@ https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handl
 
 https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handling-tutorial
 
+
+
+## YAPILACAKLAR
+
+Şifremi unuttum,google ile bağlan ,şifreyi değiştir
+
+Motivation da sözleri bir tablo şeklinde de veritabanında yaz
+
+Admin_Food
+
+Admin_Exercises yap ,exercises videolarına title koy filter ile arms yazında onu getir
+
+
