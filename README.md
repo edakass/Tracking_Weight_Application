@@ -73,3 +73,8 @@ login signup a yap
 
 
 calculate için   https://www.tutussfunny.com/how-to-add-two-numbers-using-spring-boot/
+
+
+https://www.tasarimkodlama.com/java-programlama/java-ile-vucut-kitle-indexi-hesaplama/
+
+
