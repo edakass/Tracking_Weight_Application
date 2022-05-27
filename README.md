@@ -40,6 +40,10 @@ Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
 
 
+![image](https://user-images.githubusercontent.com/61595808/170731249-6345b6d7-b3c9-468d-88fa-b09596a03394.png)
+
+
+
 
 Edit delete ve yeni besin eklemeyi adminin yapmasını sağlayacağım
 
@@ -60,7 +64,6 @@ https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handl
 
 Şifremi unuttum,google ile bağlan ,şifreyi değiştir
 
-Motivation da sözleri bir tablo şeklinde de veritabanında yaz
 
 Admin_Food
 
