@@ -67,14 +67,12 @@ https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handl
 
 Admin_Food
 
-Admin_Exercises yap ,exercises videolarına title koy filter ile arms yazında onu getir
+Admin_Exercises yap 
 
 login signup a yap
 
+GRAFİK
 
-calculate için   https://www.tutussfunny.com/how-to-add-two-numbers-using-spring-boot/
 
-
-https://www.tasarimkodlama.com/java-programlama/java-ile-vucut-kitle-indexi-hesaplama/
-
+*ADMİN PANEL İÇİN https://www.thymeleaf.org/doc/articles/springsecurity.html 
 
