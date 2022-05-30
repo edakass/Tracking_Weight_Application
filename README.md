@@ -36,6 +36,16 @@ Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
 ![image](https://user-images.githubusercontent.com/61595808/170731249-6345b6d7-b3c9-468d-88fa-b09596a03394.png)
 
+![image](https://user-images.githubusercontent.com/61595808/170987802-734a2b47-628e-4fda-9ea0-eff416a5fd1f.png)
+
+![image](https://user-images.githubusercontent.com/61595808/170988016-2c3a7997-6cb5-41f4-b2a0-8f3c8cdc2a16.png)
+
+
+
+![image](https://user-images.githubusercontent.com/61595808/170987916-56c1b441-c7c7-4b41-8577-1c6dd48f4980.png)
+
+![image](https://user-images.githubusercontent.com/61595808/170988091-e666e65d-9968-42a0-9700-357dad9cb6e1.png)
+
 
 
 https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handling-tutorial
