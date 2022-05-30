@@ -15,7 +15,6 @@ Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
 ![image](https://user-images.githubusercontent.com/61595808/149016356-6c03a6a2-3390-416b-a8a3-2759cfe0bea1.png)
 
-![image](https://user-images.githubusercontent.com/61595808/149016423-6a8da069-d6b9-4ad8-a08e-afd0ac9723db.png)
 
 ![image](https://user-images.githubusercontent.com/61595808/149016472-f6af7f18-480d-4ce1-8ae5-827589b10c2b.png)
 
