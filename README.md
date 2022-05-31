@@ -61,4 +61,4 @@ Food resmi
 
 GRAFİK
 
-
+footer yap
