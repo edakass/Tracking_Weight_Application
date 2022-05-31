@@ -62,3 +62,7 @@ Food resmi
 GRAFİK
 
 footer yap
+
+-*-*
+
+server.servlet.context-path=/shopme
