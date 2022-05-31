@@ -57,13 +57,8 @@ https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handl
 
 Şifremi unuttum,google ile bağlan ,şifreyi değiştir
 
-Admin_Food
-
-Admin_Exercises yap 
-
-login signup a yap
+Food resmi
 
 GRAFİK
 
-*ADMİN PANEL İÇİN https://www.thymeleaf.org/doc/articles/springsecurity.html 
 
