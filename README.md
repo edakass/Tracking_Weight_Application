@@ -74,3 +74,8 @@ google ile bağlanmak için şu linkten
 https://console.cloud.google.com/apis/dashboard?hl=TR&pli=1
 
 yapılması gerekenler var
+
+
+application properties den yml e döndürmek için  https://stackoverflow.com/questions/57465865/how-to-convert-from-application-properties-to-application-yml-in-spring-boot
+
+buradan sonra da google klasörüne bak,google klasörüne bak
