@@ -66,3 +66,11 @@ footer yap
 -*-*
 
 server.servlet.context-path=/shopme
+
+
+
+google ile bağlanmak için şu linkten 
+
+https://console.cloud.google.com/apis/dashboard?hl=TR&pli=1
+
+yapılması gerekenler var
