@@ -1,0 +1,162 @@
+create table exercises (
+       id integer not null auto_increment,
+        title varchar(255),
+        url varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table exercises (
+       id integer not null auto_increment,
+        title varchar(255),
+        url varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2022-06-02 13:12:50.278 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    create table food (
+       id integer not null auto_increment,
+        food_calorie integer,
+        food_name varchar(255),
+        food_quantity integer,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table food (
+       id integer not null auto_increment,
+        food_calorie integer,
+        food_name varchar(255),
+        food_quantity integer,
+        primary key (id)
+    ) engine=InnoDB
+2022-06-02 13:12:50.325 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    create table motivation (
+       id integer not null auto_increment,
+        motivation_text varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table motivation (
+       id integer not null auto_increment,
+        motivation_text varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2022-06-02 13:12:50.340 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    create table my_weight (
+       id bigint not null auto_increment,
+        date varchar(255),
+        kilogram float,
+        user_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table my_weight (
+       id bigint not null auto_increment,
+        date varchar(255),
+        kilogram float,
+        user_id bigint not null,
+        primary key (id)
+    ) engine=InnoDB
+2022-06-02 13:12:50.372 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    create table role (
+       id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table role (
+       id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2022-06-02 13:12:50.387 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    create table user (
+       id bigint not null auto_increment,
+        email varchar(255),
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table user (
+       id bigint not null auto_increment,
+        email varchar(255),
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+2022-06-02 13:12:50.434 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    create table users_roles (
+       user_id bigint not null,
+        role_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table users_roles (
+       user_id bigint not null,
+        role_id bigint not null
+    ) engine=InnoDB
+2022-06-02 13:12:50.450 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    alter table user 
+       drop index UKob8kqyqqgmefl0aco34akdtpe
+Hibernate: 
+    
+    alter table user 
+       drop index UKob8kqyqqgmefl0aco34akdtpe
+2022-06-02 13:12:50.465 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    alter table user 
+       add constraint UKob8kqyqqgmefl0aco34akdtpe unique (email)
+Hibernate: 
+    
+    alter table user 
+       add constraint UKob8kqyqqgmefl0aco34akdtpe unique (email)
+2022-06-02 13:12:50.481 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    alter table my_weight 
+       add constraint FK39qe3basjpnwpddx4i912w098 
+       foreign key (user_id) 
+       references user (id)
+Hibernate: 
+    
+    alter table my_weight 
+       add constraint FK39qe3basjpnwpddx4i912w098 
+       foreign key (user_id) 
+       references user (id)
+2022-06-02 13:12:50.559 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    alter table users_roles 
+       add constraint FKt4v0rrweyk393bdgt107vdx0x 
+       foreign key (role_id) 
+       references role (id)
+Hibernate: 
+    
+    alter table users_roles 
+       add constraint FKt4v0rrweyk393bdgt107vdx0x 
+       foreign key (role_id) 
+       references role (id)
+2022-06-02 13:12:50.637 DEBUG 11968 --- [  restartedMain] org.hibernate.SQL                        : 
+    
+    alter table users_roles 
+       add constraint FKgd3iendaoyh04b95ykqise6qh 
+       foreign key (user_id) 
+       references user (id)
+Hibernate: 
+    
+    alter table users_roles 
+       add constraint FKgd3iendaoyh04b95ykqise6qh 
+       foreign key (user_id) 
+       references user (id)
