@@ -50,34 +50,3 @@ Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
 
 
-https://www.codejava.net/frameworks/spring-boot/spring-boot-thymeleaf-form-handling-tutorial
-
-
-
-
-## YAPILACAKLAR
-
-Şifremi unuttum,google ile bağlan ,şifreyi değiştir
-
-Food resmi
-
-GRAFİK
-
-footer yap
-
--*-*
-
-server.servlet.context-path=/shopme
-
-
-
-google ile bağlanmak için şu linkten 
-
-https://console.cloud.google.com/apis/dashboard?hl=TR&pli=1
-
-yapılması gerekenler var
-
-
-application properties den yml e döndürmek için  https://stackoverflow.com/questions/57465865/how-to-convert-from-application-properties-to-application-yml-in-spring-boot
-
-buradan sonra da google klasörüne bak,google klasörüne bak
