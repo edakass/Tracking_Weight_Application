@@ -1,7 +1,6 @@
 # Tracking_Weight_Application
 
 <a href="https://github.com/edakass/SpringBoot_Tracking_Weight_Application">Github</a>
-<a href="">Youtube</a>
 <br/>
 Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
