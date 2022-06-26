@@ -4,6 +4,8 @@
 <br/>
 Spring Boot,Spring MVC, Java, Maven, IntelliJ, Mysql, HTML, CSS,Bootstrap,XAMPP
 
+There are different screens for admin and user.
+
 ![image](https://user-images.githubusercontent.com/61595808/170987614-eedfec5b-a654-47c0-a6a0-7a136fded4ae.png)
 
 
