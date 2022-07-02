@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculate</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link th:rel="stylesheet" th:href="@{/assets/tempusdominus-bootstrap-4/tempusdominus-bootstrap-4.min.css}"/>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <head>
+        <title>BMI Calculator</title>
+    </head>
+    <style>
+    .dropButon{
+      margin-right:20px;
+    }
+    .write{
+       font-size:16px;
+    }
+    .text{
+      text-align: center;
+      font-size:20px;
+    }
+    .input{
+       margin-bottom:8px;
+       height:50px;
+       width:300px;
+       border-radius:18px;
+       margin-left: 42%;
+       margin-top: 2%;
+    }
+    .btn-1{
+       background-color:#ee6363;
+       box-shadow: 8px;
+       width: 150px;
+       height: 50px;
+       border-radius: 25px;
+       margin: 0;
+       position: absolute;
+       -ms-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+       margin-left:25px;
+    }
+    .btn-1:hover{
+       background-color: #008b8b;
+       box-shadow: 8px;
+       width: 150px;
+       height: 50px;
+       border-radius: 25px;
+       margin: 0;
+       position: absolute;
+       -ms-transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+       margin-left:25px;
+    }
+    .navbar{
+       margin-bottom: 1rem;
+    }
+
+    </style>
+<body>
+
+<nav class="navbar navbar-dark bg-dark navbar-expand-sm">
+    <a class="navbar-brand  " href="#" style="color:#fff font-family:Arial Black"><strong>Tracking Weight
+        Application</strong> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link write" th:href="@{/index}" style="margin-right:5px"><strong> New Records</strong>
+                    <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write" th:href="@{/data}" style="margin-right:5px"><strong> Check My Records</strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write" th:href="@{/motivation}" style="margin-right:5px"><strong>
+                    Motivation </strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write" th:href="@{/calculate}" style="margin-right:5px"><strong> Calculate </strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write" th:href="@{/food}" style="margin-right:5px"><strong> Food </strong></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link write" th:href="@{/exercise}" style="margin-right:5px"><strong>
+                    Exercises </strong></a>
+            </li>
+        </ul>
+    </div>
+
+
+    <form class="d-flex ms-auto">
+        <form method="post">
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <div class="dropButon">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"
+                               href="#"
+                               id="navbarDropdownMenuLink"
+                               data-toggle="dropdown"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                <i class='far fa-user-circle' style='font-size:36px'></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" th:href="@{/index}"><span
+                                        class="glyphicon glyphicon-home"></span> Home</a>
+                                <a class="dropdown-item" th:href="@{/settings}"><span
+                                        class="glyphicon glyphicon-wrench"></span> Settings</a>
+                                <a class="dropdown-item" sec:authorize="isAuthenticated()" th:href="@{/logout}"><span
+                                        class="glyphicon glyphicon-log-out"></span> Logout</a>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </form>
+    </form>
+</nav>
+
+<div class="container">
+    <div class="text">
+        <h1 class="text"><font color="purple"><b>Body Mass Index Calculator(BMI)</b></font></h1>
+
+        <input type="text" id="height" name="height" class="form-control input" placeholder="Please Write Height(153)"
+               required/>
+
+
+        <input type="text" id="weight" name="weight" class="form-control input" placeholder="Please Write Weight"
+               required/>
+        <br>
+        <button id="btn" class="btn-1 input">Calculate</button>
+        <br>
+        <br>
+        <div id="result"></div>
+        <br>
+    </div>
+
+</div>
+<script>
+
+window.onload = () => {
+    let button = document.querySelector("#btn");
+
+    // Function for calculating BMI
+    button.addEventListener("click", calculateBMI);
+};
+
+function calculateBMI() {
+
+    /* Getting input from user into height variable.
+    Input is string so typecasting is necessary. */
+    let height = parseInt(document
+            .querySelector("#height").value);
+
+    /* Getting input from user into weight variable.
+    Input is string so typecasting is necessary.*/
+    let weight = parseInt(document
+            .querySelector("#weight").value);
+
+    let result = document.querySelector("#result");
+
+    // Checking the user providing a proper
+    // value or not
+    if (height === "" || isNaN(height))
+        result.innerHTML = "Provide a valid Height!";
+
+    else if (weight === "" || isNaN(weight))
+        result.innerHTML = "Provide a valid Weight!";
+
+    // If both input is valid, calculate the bmi
+    else {
+
+        // Fixing upto 2 decimal places
+        let bmi = (weight / ((height * height)
+                            / 10000)).toFixed(2);
+
+        // Dividing as per the bmi conditions
+        if (bmi < 18.6) result.innerHTML =
+            `Under Weight : <span>${bmi}</span>`;
+
+        else if (bmi >= 18.6 && bmi < 24.9)
+            result.innerHTML =
+                `Normal : <span>${bmi}</span>`;
+
+        else result.innerHTML =
+            `Over Weight : <span>${bmi}</span>`;
+    }
+}
+
+</script>
+
+</body>
+</html>

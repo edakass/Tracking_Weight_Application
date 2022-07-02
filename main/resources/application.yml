@@ -1,0 +1,52 @@
+api:
+    base:
+        path: http://localhost:1399
+logging:
+    level:
+        org:
+            hibernate:
+                SQL: DEBUG
+                type: TRACE
+server:
+    error:
+        whitelabel:
+            enabled: false
+    port: 1399
+spring:
+    datasource:
+        password: ''
+        url: jdbc:mysql://localhost:3306/tracking_weight_app?useUnicode=true&useJDBCCompliantTimezone
+        username: root
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        hibernate:
+            ddl-auto: update
+        open-in-view: false
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+                format_sql: true
+        show-sql: true
+    thymeleaf:
+        cache: false
+        mode: HTML5
+        prefix: classpath:/templates/
+        suffix: .html
+
+    security:
+      oauth2:
+          client:
+              registrstion:
+                  google:
+                      client-id: 699922981483-1s73i7cjea498p3001klhglv23q0cn0l.apps.googleusercontent.com
+                      client-secret: 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
+                      scope:
+                          - email
+                          - profile
+
+    spring:
+        main:
+            allow-circular-references: true
+
+
+
